@@ -1,0 +1,1337 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(16, 27, 35, 255);
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  height: 100vh;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.header h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: aliceblue;
+  text-align: left;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.nav-bar {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 120px;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  width: 800px;
+}
+
+.nav-bar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 50%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: aliceblue;
+  transition: all 0.5s ease;
+  font-family: "Oswald", sans-serif;
+  font-weight: "regular";
+}
+
+.nav-bar a:hover {
+  color: #3ea8f4;
+  text-decoration: underline;
+}
+
+.book {
+  background-color: #3ea8f4;
+  color: black;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-left: 50px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.book:hover {
+  background-color: aliceblue;
+  color: black;
+  transform: scale(1.1);
+  font-weight: bold;
+}
+
+.hero-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(/assets/photo/bg-1hero.jpg);
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px 0 rgb(71, 62, 62);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  align-items: center;
+  padding: 10px;
+  width: 65%;
+  height: 450px;
+  margin: 20px auto;
+}
+
+.hero-section h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  position: absolute;
+  bottom: 220px;
+  left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(17, 49, 49);
+}
+
+.hero-section p {
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  position: absolute;
+  bottom: 100px;
+  left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: rgb(222, 240, 255);
+}
+
+.hero-section .cta-button {
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: black;
+  background-color: rgb(174, 174, 221);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.hero-section .cta-button:hover {
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  background-color: rgb(17, 17, 20);
+  transform: scale(1.05);
+  color: aliceblue;
+}
+
+.card-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+  padding: 30px;
+}
+.card-container h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: gold;
+  position: absolute;
+  left: 240px;
+  margin-top: 1rem;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  background-image: url(/assets/photo/card-1.png);
+  background-image: url(/assets/photo/card-2.png);
+  background-image: url(/assets/photo/card-3.png);
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: rgb(145, 170, 192) solid 2px;
+  box-shadow: 2px 2px 10px 0 rgb(58, 58, 58);
+  padding: 20px;
+  margin-left: 250px;
+  margin-top: 50px;
+  width: 220px;
+  height: 240px;
+}
+
+.card-1 img,
+.card-2 img,
+.card-3 img {
+  border-radius: 10px;
+  background-image: url(/assets/photo/card-1.png);
+  background-image: url(/assets/photo/card-2.png);
+  background-image: url(/assets/photo/card-3.png);
+  object-fit: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.card-1:hover,
+.card-2:hover,
+.card-3:hover {
+  transform: scale(1.05);
+}
+
+.about-me h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: gold;
+  text-align: left;
+  margin-top: 40px;
+  margin-left: 240px;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+.about-me p {
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  color: aliceblue;
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 250px;
+  font-size: 1.2rem;
+}
+
+.services-section-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+  padding: 30px;
+}
+
+.Services-card {
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  font-size: 1rem;
+  background-color: rgb(182, 207, 228);
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: rgb(145, 170, 192) solid 2px;
+  box-shadow: 2px 2px 10px 0 rgb(58, 58, 58);
+  padding: 20px;
+  text-align: left;
+  margin-left: 210px;
+  margin-top: 50px;
+  width: 250px;
+  height: 170px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.Services-card:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 15px 0 rgb(58, 58, 58);
+}
+
+.services-section-container h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  position: absolute;
+  color: gold;
+  position: absolute;
+  left: 240px;
+  margin-top: 1rem;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.Plans h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: gold;
+  text-align: left;
+  margin-top: 40px;
+  margin-left: 240px;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.Plans p {
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  color: aliceblue;
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 250px;
+  padding-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.Plans-card {
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  background-color: rgba(24, 41, 52, 255);
+  color: aliceblue;
+  text-align: left;
+  padding: 20px;
+  border-radius: 10px;
+  border: #1a4361 solid 2px;
+  margin-left: 240px;
+  margin-top: 50px;
+  box-shadow: 2px 2px 10px 0 rgb(31, 30, 30);
+  width: 400px;
+  height: 200px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.Plans-card:hover {
+  transform: scale(1.05);
+}
+
+.learn-container {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  margin-top: 5px;
+  margin-left: 245px;
+}
+
+.learn-more-button {
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  background-color: #3ea8f4;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 45px;
+  padding: 10px;
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.learn-more-button:hover {
+  background-color: rgb(32, 49, 63);
+  color: white;
+  transform: scale(1.1);
+}
+
+.schedule h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: gold;
+  text-align: left;
+  margin-top: 70px;
+  margin-left: 240px;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.schedule img {
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px 0 rgb(27, 26, 26);
+  margin-top: 20px;
+  width: 400px;
+  object-fit: cover;
+  height: 320px;
+}
+
+.Client-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+  padding: 30px;
+  margin-top: 50px;
+}
+
+.Client-container h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: gold;
+  position: absolute;
+  left: 240px;
+  margin-top: 20px;
+}
+
+.Client-card {
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  color: aliceblue;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-left: 210px;
+  margin-top: 50px;
+  width: 240px;
+  height: 290px;
+}
+
+.Client-card h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: aqua;
+  margin-top: 10px;
+}
+
+.Client-card img {
+  border: rgb(145, 170, 192) solid 2px;
+  border-radius: 10px;
+  object-fit: cover;
+  background-position: top;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.Client-card img:hover {
+  transform: scale(1.05);
+}
+
+.Achievements-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+  padding: 25px;
+}
+
+.Achievements-container h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: gold;
+  position: absolute;
+  left: 240px;
+  margin-top: 20px;
+}
+
+.Achievements-card {
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  color: aliceblue;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-left: 210px;
+  margin-top: 50px;
+  width: 250px;
+  height: 270px;
+}
+
+.Achievements-card h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: aqua;
+  margin-top: 10px;
+}
+
+.Achievements-card img {
+  border: rgb(145, 170, 192) solid 2px;
+  border-radius: 10px;
+  object-fit: cover;
+  background-position: top;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.Achievements-card:hover img {
+  transform: scale(1.05);
+}
+
+.blog-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+  padding: 30px;
+}
+
+.blog-container h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: gold;
+  position: absolute;
+  left: 240px;
+  margin-top: 20px;
+}
+
+.blog-card {
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  color: aliceblue;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-left: 210px;
+  margin-top: 50px;
+  width: 250px;
+  height: 290px;
+}
+
+.blog-card h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: aqua;
+  margin-top: 10px;
+}
+
+.blog-card img {
+  border-radius: 10px;
+  object-fit: cover;
+  background-position: top;
+  width: 100%;
+  border: rgb(145, 170, 192) solid 2px;
+  transition: all 0.3s ease;
+}
+
+.blog-card img:hover {
+  transform: scale(1.05);
+}
+
+.faq h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: gold;
+  text-align: left;
+  margin-top: 40px;
+  margin-left: 240px;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.faq p {
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  background-color: rgb(115, 140, 161);
+  color: black;
+  width: 950px;
+  height: 50px;
+  margin-top: 20px;
+  text-align: left;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-left: 250px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: gold;
+  text-align: left;
+  margin-top: 40px;
+  margin-left: 240px;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.name {
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  background-color: rgb(115, 140, 161);
+  color: black;
+  text-align: left;
+  border-radius: 10px;
+  width: 430px;
+  height: 50px;
+  padding-left: 10px;
+  padding-top: 5px;
+  margin-top: 20px;
+  margin-left: 250px;
+  font-size: 1.2rem;
+}
+
+.email {
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  background-color: rgb(115, 140, 161);
+  color: black;
+  text-align: left;
+  border-radius: 10px;
+  width: 430px;
+  height: 50px;
+  padding-left: 10px;
+  padding-top: 5px;
+  margin-top: 20px;
+  margin-left: 250px;
+  font-size: 1.2rem;
+}
+
+.message {
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  background-color: rgb(115, 140, 161);
+  color: black;
+  text-align: left;
+  border-radius: 10px;
+  width: 450px;
+  height: 150px;
+  padding-left: 10px;
+  padding-top: 5px;
+  margin-top: 20px;
+  margin-left: 250px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.send-button {
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  background-color: #3ea8f4;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  transition: all 0.4s ease;
+}
+
+.send-button:hover {
+  background-color: aliceblue;
+  color: black;
+  transform: scale(1.05);
+}
+
+.Newsletter h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: rgb(197, 187, 187);
+  text-align: left;
+  margin-top: 40px;
+  margin-left: 450px;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.Newsletter p {
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  color: rgb(197, 187, 187);
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.par {
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  position: relative;
+  background-color: rgb(197, 187, 187);
+  color: black;
+  border: none;
+  width: 500px;
+  height: 60px;
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 90px;
+  border-radius: 5px;
+  margin-left: 450px;
+  padding: 10px 15px;
+  margin-top: 25px;
+  font-size: 1.2rem;
+}
+
+.par button {
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  background-color: rgb(24, 59, 90);
+  color: black;
+  position: absolute;
+  top: 10px;
+  bottom: 15px;
+  right: 10px;
+  width: 120px;
+  height: 40px;
+  margin-bottom: 100px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.kaf {
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  display: inline-flex;
+  flex-direction: row;
+  gap: 130px;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  justify-content: center;
+  align-items: center;
+  color: rgb(197, 187, 187);
+  margin: 5px 0;
+}
+
+.social-icons a {
+  color: aliceblue;
+  margin: 15px 15px;
+}
+
+.footer-content {
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  color: aliceblue;
+  padding: 5px;
+  text-align: center;
+}
+
+/* tablet */
+
+/* Target tablets: between 768px and 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  html,
+  body {
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    padding: 0 16px;
+  }
+  .header h1 {
+    margin-left: 12px;
+    margin-top: 10px;
+    font-size: 1.4rem;
+    text-align: left;
+  }
+
+  .nav-bar {
+    position: static;
+    width: 100%;
+    padding: 0 12px;
+    margin-top: 8px;
+    justify-content: flex-end;
+  }
+  .nav-bar ul {
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    flex-direction: row;
+    width: 100%;
+    font-size: 15px;
+    margin-right: 90px;
+    gap: 30px;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .book {
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    margin-left: 12px;
+    margin-right: 60px;
+    width: 130px;
+    padding: 8px;
+    font-size: 1rem;
+  }
+
+  .hero-section {
+    width: 95%;
+    height: 330px;
+    padding: 10px;
+    margin: 18px auto;
+  }
+  .hero-section h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+    left: 20px;
+    bottom: 140px;
+  }
+  .hero-section p {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-size: 1.05rem;
+    left: 20px;
+    bottom: 50px;
+  }
+  .hero-section .cta-button {
+    font-size: 1rem;
+    padding: 8px 14px;
+    left: 18px;
+    bottom: 18px;
+  }
+
+  /* CARD GRIDS - 2 columns on tablets, left-aligned */
+  .card-container,
+  .services-section-container,
+  .Client-container,
+  .Achievements-container,
+  .blog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 5px; /* Even spacing between items */
+    padding: 20px; /* Padding around the grid */
+    justify-items: center; /* Center-align cards horizontally */
+    align-items: start; /* Align cards to the top */
+    box-sizing: border-box;
+  }
+
+  /* Card elements */
+  .card-1,
+  .card-2,
+  .card-3,
+  .Services-card,
+  .Client-card,
+  .Achievements-card,
+  .blog-card {
+    margin: 0;
+    margin-top: 70px;
+    width: 95%;
+    max-width: 250px;
+    min-width: 160px;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+
+  .Plans-card {
+    margin-left: 30px;
+    margin-top: 40px;
+    width: 95%;
+    height: auto;
+    max-width: 450px;
+    min-width: 160px;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+
+  .Plans-card h3 {
+    padding-top: 5px;
+    font-size: 1rem;
+    margin-bottom: 12px;
+    text-align: left;
+  }
+
+  .learn-container {
+    margin-left: 35px;
+    margin-top: 10px;
+    justify-content: flex-start;
+  }
+  .learn-more-button {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: medium;
+    margin-top: 15px;
+    width: 130px;
+    height: 36px;
+    font-size: 0.95rem;
+  }
+  /* Card images */
+  .Client-card img,
+  .Achievements-card img,
+  .blog-card img,
+  .schedule img {
+    width: 100%;
+    height: auto;
+    margin-top: 3px;
+    object-fit: cover;
+    margin-top: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 8px;
+  }
+
+  /* Section titles and headings */
+  .card-container h2,
+  .services-section-container h2,
+  .Client-container h2,
+  .Achievements-container h2,
+  .blog-container h2,
+  .about-me h2,
+  .Plans h2,
+  .schedule h2,
+  .faq h2,
+  .contact h2,
+  .Newsletter h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    margin-top: 50px;
+    text-align: left;
+    left: auto;
+    margin-left: 30px;
+    width: 100%;
+    color: gold;
+  }
+
+  /* Paragraphs, form fields, etc. */
+  .about-me p,
+  .Plans p,
+  .faq p,
+  .name,
+  .email,
+  .message,
+  .par {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    padding: 7px;
+    box-sizing: border-box;
+    max-width: 650px;
+  }
+
+  .Client-card p {
+    color: aliceblue;
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-left: 12px;
+    margin-right: 12px;
+    font-size: 1rem;
+    padding: 7px;
+    box-sizing: border-box;
+    max-width: 650px;
+  }
+
+  /* FAQ card width */
+  .faq p {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    width: 90vw !important;
+    max-width: 700px;
+    font-size: 1rem;
+    margin-left: 12px;
+  }
+
+  /* About, plans, schedule, etc. */
+  .about-me h2,
+  .Plans h2,
+  .schedule h2,
+  .faq h2,
+  .contact h2,
+  .Newsletter h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    color: gold;
+    margin-left: 30px;
+    margin-top: 22px;
+    font-size: 1.18rem;
+    text-align: left;
+  }
+
+  /* Newsletter */
+  .Newsletter h2 {
+    font-family: "Montserrat", sans-serif;
+    margin-left: 22px;
+    font-size: 1.18rem;
+  }
+  .Newsletter p {
+    font-family: "Poppins", sans-serif;
+    margin-top: 10px;
+    margin-left: 80px;
+    font-size: 1rem;
+  }
+  .par {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    width: 550px;
+    padding: 8px;
+  }
+
+  /* Contact fields */
+  .name,
+  .email,
+  .message {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    margin-left: 30px;
+    width: 400px;
+    max-width: 450px;
+    font-size: 1rem;
+    padding: 7px;
+  }
+
+  .send-button {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    margin-left: 12px;
+    margin-top: 12px;
+    padding: 9px 13px;
+  }
+
+  /* Footer and kaf */
+  .kaf {
+    display: flex;
+    flex-direction: row;
+    color: aliceblue;
+    gap: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    align-items: flex-start;
+    margin-left: 14px;
+  }
+  .footer-content {
+    color: aliceblue;
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    padding: 5px 12px;
+    text-align: left;
+  }
+}
+
+/* phone */
+
+.hamburger {
+  position: absolute;
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  top: 20px;
+  left: 10px;
+  color: aliceblue;
+}
+/* هدر و منو */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-bar {
+    display: none;
+  }
+
+  .nav-bar.active {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 25px;
+  }
+  .header h1 {
+    margin-left: 310px;
+    font-size: 1.5rem;
+  }
+  .nav-bar {
+    position: static;
+    width: 100%;
+    padding: 0;
+    margin-top: 10px;
+  }
+  .nav-bar ul {
+    font-family: "Oswald", sans-serif;
+    font-weight: normal;
+    color: aliceblue;
+    flex-direction: column;
+    align-content: flex-start;
+    width: 100%;
+    font-size: 15px;
+    padding: 0;
+    margin-left: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .book {
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 8px 12px;
+  }
+
+  .hero-section {
+    width: 98%;
+    height: 320px;
+    padding: 5px;
+    margin: 10px auto;
+  }
+  .hero-section h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    position: static;
+    font-size: 1.25rem;
+    margin: 15px 0 10px 0;
+    left: 0;
+    bottom: auto;
+  }
+  .hero-section p {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    position: static;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    left: 0;
+    bottom: auto;
+  }
+  .hero-section .cta-button {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    position: static;
+    font-size: 1rem;
+    padding: 8px 14px;
+    margin-bottom: 8px;
+    left: 0;
+    bottom: auto;
+    margin-top: 10px;
+  }
+
+  .card-container,
+  .services-section-container,
+  .Client-container,
+  .Achievements-container,
+  .blog-container {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+  }
+  .card-container h2,
+  .services-section-container h2,
+  .Client-container h2,
+  .Achievements-container h2,
+  .blog-container h2,
+  .about-me h2,
+  .Plans h2,
+  .schedule h2,
+  .faq h2,
+  .contact h2,
+  .Newsletter h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    color: gold;
+    font-size: 1.2rem;
+    margin-left: 10px;
+    margin-top: 15px;
+    left: 0;
+    position: static;
+  }
+  .about-me p,
+  .Plans p,
+  .faq p,
+  .name,
+  .email,
+  .message,
+  .par {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 97vw !important;
+    font-size: 1rem;
+    padding: 8px;
+  }
+  .card-1,
+  .card-2,
+  .card-3,
+  .Services-card,
+  .Client-card,
+  .Achievements-card,
+  .blog-card {
+    margin-right: 200px !important;
+    width: 80vw !important;
+    max-width: 90vw;
+    margin-top: 20px;
+    height: auto;
+    padding: 15px;
+  }
+
+  .Plans-card {
+    margin-left: 30px;
+    margin-top: 40px;
+    width: 95%;
+    height: auto;
+    max-width: 370px;
+    min-width: 160px;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+
+  .Client-card img,
+  .Achievements-card img,
+  .blog-card img,
+  .schedule img {
+    justify-content: center;
+    align-items: center;
+    width: 60vw !important;
+    margin-left: 20px;
+    margin-right: 40px;
+    height: auto;
+    margin-top: 5px;
+  }
+  .learn-container {
+    margin-left: 35px;
+    margin-top: 10px;
+    justify-content: flex-start;
+  }
+  .learn-more-button {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: medium;
+    margin-top: 15px;
+    width: 130px;
+    height: 36px;
+    font-size: 0.95rem;
+  }
+  .schedule img {
+    width: 95vw !important;
+    height: auto;
+    margin-left: 0;
+  }
+  .kaf {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    flex-direction: row;
+    color: aliceblue;
+    gap: 15px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    align-items: flex-start;
+    margin-left: 10px;
+  }
+  .footer-content {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-size: 0.95rem;
+    padding: 5px;
+  }
+}
+
+/* @media (max-width: 480px) { 
+  html,
+  body {
+    font-size: 13px;
+  }
+  .header h1 {
+    font-size: 1rem;
+  }
+  .nav-bar ul {
+    font-size: 13px;
+    gap: 5px;
+  }
+  .book,
+  .learn-more-button,
+  .send-button {
+    font-size: 0.9rem;
+    padding: 7px 10px;
+    width: 90px;
+    height: 32px;
+  }
+  .hero-section {
+    height: 210px;
+    padding: 3px;
+  }
+  .hero-section h2 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  .hero-section p {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
+  .card-1,
+  .card-2,
+  .card-3,
+  .Services-card,
+  .Plans-card,
+  .Client-card,
+  .Achievements-card,
+  .blog-card {
+    padding: 8px;
+    margin-top: 10px;
+    width: 98vw !important;
+    font-size: 0.9rem;
+    height: auto;
+  }
+  .name,
+  .email,
+  .message,
+  .par {
+    font-size: 0.95rem;
+    padding: 6px;
+    width: 98vw !important;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .faq p {
+    width: 98vw !important;
+    font-size: 0.95rem;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 6px;
+  }
+  .Newsletter h2,
+  .Newsletter p {
+    margin-left: 5px;
+    font-size: 1rem;
+  }
+  .kaf {
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+  }
+  .footer-content {
+    font-size: 0.85rem;
+  }
+ } */
